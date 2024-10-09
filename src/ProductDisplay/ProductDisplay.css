@@ -1,0 +1,115 @@
+/* ProductDisplay.css */
+.product-display {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    margin: 20px auto;
+  }
+  
+  /* Left section - Image thumbnails */
+  .productdisplay-left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+  }
+  
+  .productdisplay-img-list {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  
+  .productdisplay-img-list img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;  /* Ensures images are not distorted */
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .productdisplay-img-list img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .productdisplay-img {
+    margin-top: 20px;
+  }
+  
+  .productdisplay-main-page {
+    max-width: 100%;  /* Ensures image takes the maximum allowed width */
+    max-height: 400px;
+    object-fit: contain;  /* Maintains aspect ratio without cropping */
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Right section - Product details */
+  .productdisplay-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 30px;
+    flex: 1;
+  }
+  
+  .productdisplay-right h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .productdisplay-right-start {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .productdisplay-right-start img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* Price section */
+  .productdisplay-right-prices {
+    margin: 20px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+  }
+  
+  .productdisplay-right-prices-old {
+    font-size: 18px;
+    color: #888;
+    text-decoration: line-through;
+  }
+  
+  .productdisplay-right-prices-new {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e74c3c;
+  }
+  
+  /* Add to Cart button */
+  button {
+    padding: 12px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  

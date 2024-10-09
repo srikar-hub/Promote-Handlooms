@@ -1,0 +1,151 @@
+.cartitems {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .cartitems-format-main {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr 1fr 1fr 1fr 0.5fr; /* Updated to better fit the 'Remove' icon */
+    gap: 20px;
+    padding: 10px 0;
+    border-bottom: 2px solid #e0e0e0;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .cartitems-format {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr 1fr 1fr 1fr 0.5fr; /* Matching the main grid */
+    gap: 20px;
+    padding: 20px 0;
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: center;
+  }
+  
+  .cartitems img {
+    width: 80px; /* Adjusted width */
+    height: 80px; /* Adjusted height */
+    border-radius: 10px;
+    object-fit: cover;
+    margin-left: 30px; /* Aligned image more to the right */
+    float: left; /* Float the image to the right */  
+  }
+
+  
+  .cartitems-quantity {
+    padding: 5px 15px;
+    border: none;
+   
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  .cartitems-quantity:hover {
+    background-color: #ddd;
+  }
+  
+  .cartitems-format p {
+    margin: 0;
+  }
+  
+  .cartitems-format img:last-child {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .cartitems-format img:last-child:hover {
+    transform: scale(1.2);
+  }
+  
+  hr {
+    margin: 10px 0;
+    border: 1px solid #e0e0e0;
+  }
+  
+  @media (max-width: 768px) {
+    .cartitems-format-main,
+    .cartitems-format {
+      grid-template-columns: 1fr 2fr 1fr;
+    }
+  
+    .cartitems-format p:nth-child(2),
+    .cartitems-format p:nth-child(3),
+    .cartitems-format p:nth-child(4),
+    .cartitems-format p:nth-child(5),
+    .cartitems-format img:last-child {
+      display: none;
+    }
+  
+    .cartitems img {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  .cartitems-down {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Ensures it covers full width */
+    box-sizing: border-box; /* Makes padding and borders part of the total width */
+  }
+  
+  .cartitems-total {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .cartitems-total h3 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .cart-total-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    color: #555;
+  }
+  
+  .cart-total-items p,
+  .cart-total-items h3 {
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+  hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 15px 0;
+  }
+  
+  button {
+    background-color: #ff6f61;
+    color: white;
+    padding: 15px;
+    width: 100%; /* Ensures the button covers full width */
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #ff3f3f;
+  }
+  
