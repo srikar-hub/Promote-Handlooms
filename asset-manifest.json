@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Promote-Handlooms/static/css/main.424ef978.css",
+    "main.js": "/Promote-Handlooms/static/js/main.573cfdbd.js",
+    "index.html": "/Promote-Handlooms/index.html",
+    "main.424ef978.css.map": "/Promote-Handlooms/static/css/main.424ef978.css.map",
+    "main.573cfdbd.js.map": "/Promote-Handlooms/static/js/main.573cfdbd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.424ef978.css",
+    "static/js/main.573cfdbd.js"
+  ]
+}
