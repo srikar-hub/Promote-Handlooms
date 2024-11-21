@@ -20,7 +20,7 @@ export default function Navbar() {
         <li  onClick={()=>{setMenu("Contact")}}><Link to="/contact" style={{textDecoration:"none"}}>Contact</Link>{menu==="Contact"?<hr/>:<></>}</li>
        </ul>
        <div className="nav-login-cart">
-       <Link to="/login" style={{textDecoration:"none"}} ><button>Login</button></Link>
+       <Link to="/signup" style={{textDecoration:"none"}} ><button>signup</button></Link>
         <Link to="/carts" style={{textDecoration:"none"}}><img src={cart} alt="" /></Link> 
         <div className="nav-bar-count">{totalNoOfItems()}</div>
        </div>
