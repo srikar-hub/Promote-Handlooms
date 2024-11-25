@@ -58,7 +58,7 @@ export default function Signup() {
             Password<input type="password" name="password" placeholder='Enter password' value={formData.password} onChange={handleChange} required />
             <button>Signup</button>
             <p>Already have an Account? <Link to="/login">Login</Link> </p> 
-            <p><Link to="/forgotPassword">Forgot Password?</Link></p>
+            <p><Link to="/send">Forgot Password?</Link></p>
             <ToastContainer/>
         </form>
     </div>

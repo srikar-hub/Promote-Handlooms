@@ -13,11 +13,13 @@ import Collection from './Components/Collections/Collection';
 import LoginSecutiy from './Pages/LoginSecutiy';
 import ProtectedRoute from './Pages/ProtectedRoute';
 import Logout from './Pages/Logout';
+import SendEmail from './Pages/SendEmail';
 function App() {
   return (
         <>
         <Navbar/>
         <Routes>
+          <Route path="/send" element={<SendEmail/>}/>
           <Route path="/" element={<ProtectedRoute><Home/></ProtectedRoute>}/>
           <Route path="/items" element={<ProtectedRoute><Collection/></ProtectedRoute>}>
           <Route path=':itemId' element={<Collection/>}/>
@@ -39,3 +41,4 @@ function App() {
 }
 
 export default App;
+

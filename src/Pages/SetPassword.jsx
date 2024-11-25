@@ -64,6 +64,7 @@ export default function SetPassword() {
                 <button type='submit'>Signup</button>          
                 <ToastContainer/>
             </form>
+            
         </div>
     
       
