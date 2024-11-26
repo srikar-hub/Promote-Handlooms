@@ -54,7 +54,7 @@ export default function CartItems() {
              <div className="cart-total-items">
               <p>Subtotal</p>
               <p>&#8377;{getTotalCostOfCart()}</p>
-             </div>
+             </div> 
              <hr />
              <div className='cart-total-items'>
               <h3>Shipping</h3>
