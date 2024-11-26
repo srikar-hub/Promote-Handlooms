@@ -14,6 +14,7 @@ import LoginSecutiy from './Pages/LoginSecutiy';
 import ProtectedRoute from './Pages/ProtectedRoute';
 import Logout from './Pages/Logout';
 import SendEmail from './Pages/SendEmail';
+
 function App() {
   return (
         <>
@@ -26,6 +27,7 @@ function App() {
           </Route>
           <Route path='/forgotPassword' element={<ForgotPassword/>} />
           <Route path='/setPassword' element={<SetPassword/>} />
+        
           <Route path="/about" element={<Home/>}/>
           <Route path="/signup" element={<Signup/>}/>
           <Route path='/carts' element={<ProtectedRoute><Carts/></ProtectedRoute>}/>

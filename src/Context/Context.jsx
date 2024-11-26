@@ -69,7 +69,7 @@ const ShopContextProvider=(props)=>{
             })
             totalAmount+=itemInfo.new_cost* useCart[item];
       }
-     
+    
     }  
     return totalAmount;    
    }
